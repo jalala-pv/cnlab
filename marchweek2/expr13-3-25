@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "enter value of a:"
+read a;
+echo "enter value of b:"
+read b;
+echo "enter value of c:"
+read c;
+echo "enter value of d:"
+read d;
+if [ "$d" -eq 0 ]; then
+        echo "value of d cannot be 0"
+else
+
+        result=$(echo "$a * 20 - $b * 2 + $c / $d" | bc -l);
+        echo "result:$result";
+fi
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~                                                                                                                             
+~

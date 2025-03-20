@@ -1,0 +1,6 @@
+if [ -r "$1" ] && [ -w "$1" ] && [ -x "$1" ]
+then
+        echo " file has read,write and execute permission"
+else
+        echo "file doesnt have read,write,execute permissions"
+fi

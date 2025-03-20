@@ -1,0 +1,9 @@
+echo "enter the file"
+read file
+if [ -d $file ]
+then
+        echo "file is a directory"
+else
+        echo "filr not  a directory"
+fi
+~                                                                                                                                                                       

@@ -1,0 +1,6 @@
+if  cmp -s "$1" "$2"
+then
+        echo "both files have same content"
+else
+        echo "both files doesnt have same content"
+fi

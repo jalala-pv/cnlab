@@ -1,0 +1,7 @@
+if [ -s "$1" ]
+then
+        echo "file is not  empty"
+
+else
+        echo "file is  empty"
+fi

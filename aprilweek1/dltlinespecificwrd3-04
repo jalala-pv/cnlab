@@ -1,0 +1,8 @@
+if [ $# -ne 2 ];then
+        echo " usage: $0 <file> <wordtodelete>"
+        exit 1
+fi
+filename=$1
+deleteword=$2
+sed -i "/$deleteword/d" "$filename"
+echo "lines containing $deleteword deleted from $filename"

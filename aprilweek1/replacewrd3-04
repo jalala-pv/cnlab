@@ -1,0 +1,5 @@
+if [ $# -ne 3 ];then
+        echo " usage: $0 <file> <old word> <new word>"
+        exit 1
+fi
+sed -i "s/$2/$3/g" "$1"

@@ -1,0 +1,5 @@
+if [ $# -ne 2 ];then
+        echo " usage: $0 <file> <linenumber>"
+        exit 1
+fi
+sed -i "$2d" "$1"

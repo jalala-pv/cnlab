@@ -1,0 +1,8 @@
+if [ $# -ne 2 ];then
+        echo " usage: $0 <file> <texttoappend>"
+        exit 1
+fi
+filename=$1
+append_text=$2
+sed -i "s/$/$append_text/" "$filename"
+echo "text appended to each line of $filename successfully"
